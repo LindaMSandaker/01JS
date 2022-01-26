@@ -1,34 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>3</title>
 
     <script>
-        // Given an array of numbers: [1,2,31,24,-67,5,3,555,79,-4,21,33,89,-90].
-        // 1) Find the maximum and minimum value of the array.
-        var arr = [1,2,31,24,-67,5,3,555,79,-4,21,33,89,-90];
+      // Given an array of numbers: [1,2,31,24,-67,5,3,555,79,-4,21,33,89,-90].
+      // 1) Find the maximum and minimum value of the array.
+      var arr = [1, 2, 31, 24, -67, 5, 3, 555, 79, -4, 21, 33, 89, -90];
+      console.log(arr);
 
-        console.log(arr);
+      function compareNumeric(a, b) {
+        return a - b;
+      }
+      var tempArr = arr.sort(compareNumeric);
+      console.log(tempArr);
+      var minValue = tempArr[0];
+      console.log(minValue);
+      var maxValue = tempArr[tempArr.length - 1];
+      console.log(maxValue);
 
-        function compareNumeric(a, b) {
-            return a - b
-        };
+      document.write(
+        "My max value is " + maxValue + " and my min value is " + minValue
+      );
 
-        var tempArr = arr.sort(compareNumeric);
-        var minValue = tempArr[0];
-        var maxValue = tempArr[tempArr.length - 1];
+      // var tempArr = arr.sort(compareNumeric);
+      // var minValue = tempArr[0];
+      //  var maxValue = tempArr[tempArr.length - 1];
 
-        document.write("Min value: " + minValue + '<br/>' + "Max value: " + maxValue + '<br/>');
+      //  document.write(
+      //    "My max value is " + maxValue + " and my min value is " + minValue
+      //   );
 
+      // why array sort doesn't sort correctly
 
-        // why array sort doesn't sort correctly
-
-        // https://stackoverflow.com/questions/7000851/array-sort-doesnt-sort-numbers-correctly
+      // https://stackoverflow.com/questions/7000851/array-sort-doesnt-sort-numbers-correctly
     </script>
-
-</head>
-<body>
-<p>Lesson 1 Classwork Task 3</p>
-</body>
+  </head>
+  <body>
+    <p>Lesson 1 Classwork Task 3</p>
+  </body>
 </html>

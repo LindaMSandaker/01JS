@@ -1,20 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>1</title>
 
     <script>
-        // Create an empty user object.
-        // Add the name property with the value Hesh.
-        // Add property surname with value Peter.
-        // Change name to Sokki.
-        // Remove the name property from the object.
+      // Create an empty user object.
+      // Add the name property with the value Hesh.
+      // Add property surname with value Peter.
+      // Change name to Sokki.
+      // Remove the name property from the object.
+      var user = {};
+      Object.assign(user, { name: "Hesh" });
+      console.log(user);
+      Object.assign(user, { surname: "Peter" });
+      console.log(user);
+      Object.assign(user, { name: "Sokki" });
+      console.log(user);
+      delete user.name;
+      console.log(user);
 
+      var user1 = {
+        name: "",
+        surname: "",
+      };
+      user1.name = "Hesh";
+      console.log(user1);
+      user1.surname = "Peter";
+      console.log(user1);
+      user1.name = "Sokki";
+      console.log(user1);
+      delete user1.name;
+      console.log(user1);
     </script>
-
-</head>
-<body>
-<p>Lesson 1 Classwork Task 1</p>
-</body>
+  </head>
+  <body>
+    <p>Lesson 1 Classwork Task 1</p>
+  </body>
 </html>

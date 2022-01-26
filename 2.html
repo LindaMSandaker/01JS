@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>2</title>
 
     <script>
-        // Create an isEmpty(obj) function that returns true if the
-        // object has no properties and false if there is
-        // at least one property.
+      // Create an isEmpty(obj) function that returns true if the
+      // object has no properties and false if there is
+      // at least one property.
+      var someObject = {};
 
-        function isEmpty(obj) {
-            for (var key in obj) {
-                return false;
-            }
-            return true;
+      var someObject1 = {
+        name: "Linda",
+      };
+
+      function isEmpty(obj) {
+        for (var key in obj) {
+          return false;
         }
-    </script>
+        return true;
+      }
 
-</head>
-<body>
-<p>Lesson 1 Classwork Task 2</p>
-</body>
+      console.log(isEmpty(someObject1));
+    </script>
+  </head>
+  <body>
+    <p>Lesson 1 Classwork Task 2</p>
+  </body>
 </html>
